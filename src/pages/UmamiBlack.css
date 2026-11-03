@@ -1,0 +1,80 @@
+
+
+/* NOMERO! 글자별 등장 인터랙션 */
+.umami-black .detail-nomero-line .detail-nomero {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.umami-black .nomero-letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+
+
+
+
+/* UMAMI BLACK - 메인 비주얼 타이포 */
+.umami-black .detail-visual-title {
+  color: #A40405;
+}
+
+
+/* UMAMI BLACK - 제품 설명 배경 */
+.umami-black .detail-olive {
+  background-color: #780102;
+}
+
+
+
+/* UMAMI BLACK - 원료 인포그래픽 라벨 위치 */
+
+.umami-black .label-kale {
+  left: 12.6%;
+  top: 0%;
+}
+
+.umami-black .label-protein {
+  left: 46.4%;
+  top: 0%;
+}
+
+.umami-black .label-amino {
+  left: 89%;
+  top: 0%;
+}
+
+.umami-black .label-crumble {
+  left: 31%;
+  bottom: 2%;
+}
+
+.umami-black .label-potassium {
+  left: 69%;
+  bottom: 2%;
+}
+
+
+.umami-black .timeline-circle.morning{
+    background: conic-gradient(transparent 0deg 95deg, #780102 95deg 360deg);
+}
+
+.umami-black .timeline-circle.lunch{
+    background: linear-gradient(90deg, #780102 50%, transparent 50%);
+}
+
+.umami-black .timeline-circle.evening{
+    background-color: #780102;
+}
+
+.umami-black .detail-timeline-ending h3{
+    color: #780102;
+}
+
+
+.umami-black .detail-editorial-text{
+    color: #A91819;
+}
+
+

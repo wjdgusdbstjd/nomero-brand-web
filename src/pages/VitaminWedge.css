@@ -1,0 +1,142 @@
+.vitamin-wedge .detail-nomero-line .detail-nomero {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.vitamin-wedge .nomero-letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+
+
+/* UMAMI BLACK - 메인 비주얼 타이포 */
+.vitamin-wedge .detail-visual-title {
+  color: #2A2A2A;
+}
+
+
+/* UMAMI BLACK - 제품 설명 배경 */
+.vitamin-wedge .detail-olive {
+  background-color: #2A2A2A;
+}
+
+
+
+
+/* VITAMIN WEDGE - 원료 인포그래픽 라벨 위치 */
+
+.vitamin-wedge .label-kale {
+  left: 10.8%;
+  top: 9%;
+}
+
+.vitamin-wedge .label-protein {
+  left: 49.5%;
+  top: 9%;
+}
+
+.vitamin-wedge .label-amino {
+  left: 88%;
+  top: 9%;
+}
+
+.vitamin-wedge .label-crumble {
+  left: 32.2%;
+  bottom: 6%;
+}
+
+.vitamin-wedge .label-potassium {
+  left: 69.4%;
+  bottom: 6%;
+}
+
+
+
+
+/* =========================================
+   VITAMIN WEDGE - TIMELINE MARKERS
+========================================= */
+
+/* 마커 공통 스타일 */
+.vitamin-wedge .timeline-circle {
+  display: block;
+  width: 1.8vw;
+  height: 1.8vw;
+  border-radius: 50%;
+  background: #2A2A2A;
+  transform: none;
+  clip-path: none;
+}
+
+/* 01. 첫 번째 - 왼쪽 위 1/4원 */
+
+.vitamin-wedge
+.detail-timeline-item:nth-child(1)
+.timeline-circle {
+  width: 0.9vw;
+  height: 0.9vw;
+
+  background: #2A2A2A;
+  border-radius: 100% 0 0 0;
+
+  clip-path: none;
+  transform: translateX(-0.2vw);
+
+}
+
+
+/* 02. 두 번째 - 위쪽 반원 */
+.vitamin-wedge
+.detail-timeline-item:nth-child(2)
+.timeline-circle {
+  background: linear-gradient(
+    to bottom,
+    #2A2A2A 0% 50%,
+    transparent 50% 100%
+  );
+  transform: none;
+}
+
+/* 03. 세 번째 - 완전한 원 */
+.vitamin-wedge
+.detail-timeline-item:nth-child(3)
+.timeline-circle {
+  background: #2A2A2A;
+  border-radius: 50%;
+  transform: none;
+}
+
+/* 연결선 컬러 */
+/* .vitamin-wedge .detail-timeline-marker::after {
+  background-color: #000000;
+} */
+
+.vitamin-wedge .detail-timeline-ending h3{
+    color: #2A2A2A;
+}
+
+
+.vitamin-wedge  .detail-editorial-text{
+  color: #2A2A2A;
+}
+
+
+/* VITAMIN WEDGE - 모바일 타임라인 아이콘 크기 */
+@media (max-width: 900px) {
+  /* 전체 원형 아이콘 */
+  .vitamin-wedge .timeline-circle {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 첫 번째 1/4원 */
+  .vitamin-wedge
+  .detail-timeline-item:nth-child(1)
+  .timeline-circle {
+    width: 9px;
+    height: 9px;
+    transform: translateX(-2px);
+  }
+}

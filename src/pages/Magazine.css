@@ -1,0 +1,304 @@
+/* ===================================
+   MAGAZINE PAGE
+=================================== */
+
+.magazine-page {
+  width: 100%;
+  color: #191938;
+}
+
+/* ===================================
+   INTRO
+=================================== */
+
+.magazine-intro {
+  padding: 60px 20px 45px;
+}
+
+.magazine-title {
+  margin: 0 0 38px;
+  font-size: 4.3vw;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2%;
+}
+
+/* 카테고리 */
+.magazine-categories {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+
+.magazine-category {
+  position: relative;
+  padding: 0 4px 10px;
+  border: none;
+  background: transparent;
+  color: #d5d5d5;
+  font: inherit;
+  font-size: 1.88vw;
+  font-weight: 700;
+  letter-spacing: -2%;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.magazine-category.active {
+  color: #191938;
+}
+
+/* .magazine-category.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #191938;
+} */
+
+/* 소개 문구 */
+.magazine-description {
+  max-width: 60vw;
+  margin: 0;
+  font-size: 1.3vw;
+  font-weight: 300;
+  line-height: 171%;
+  word-break: keep-all;
+  letter-spacing: -5%;
+}
+
+/* ===================================
+   ARTICLE GRID
+=================================== */
+
+.magazine-list {
+  width: 100%;
+}
+
+.magazine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+/* 기사 카드 */
+.magazine-card {
+  min-width: 0;
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+/* 세 번째 카드마다 오른쪽 선 제거 */
+.magazine-card:nth-child(3n) {
+  border-right: none;
+}
+
+/* 이미지 */
+.magazine-card-image {
+  width: 100%;
+  aspect-ratio: 1.48 / 1;
+  overflow: hidden;
+}
+
+.magazine-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+/* 기사 정보 */
+.magazine-card-info {
+  min-height: 155px;
+  padding: 28px 24px 30px;
+}
+
+.magazine-card-info h2 {
+  margin: 0 0 1vw;
+  font-size: 1.56vw;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -2%;
+}
+
+.magazine-card-info p {
+  margin: 0;
+  color: #d0d0d0;
+  font-size: 0.99vw;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -5%;
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 1024px) {
+  .magazine-intro {
+    padding: 50px 20px 40px;
+  }
+
+  .magazine-categories {
+    gap: 30px;
+  }
+
+  .magazine-category {
+    font-size: 18px;
+  }
+
+  .magazine-card-info {
+    min-height: 135px;
+    padding: 22px 18px;
+  }
+
+  .magazine-card-info h2 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 700px) {
+  .magazine-intro {
+    padding: 40px 16px;
+  }
+
+  .magazine-title {
+    font-size: 46px;
+    margin-bottom: 30px;
+  }
+
+  .magazine-categories {
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+
+  .magazine-category {
+    font-size: 15px;
+  }
+
+  .magazine-description {
+    font-size: 13px;
+  }
+
+  .magazine-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .magazine-card {
+    border-right: 1px solid #aaa;
+  }
+
+  .magazine-card:nth-child(3n) {
+    border-right: 1px solid #aaa;
+  }
+
+  .magazine-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .magazine-card-image {
+    aspect-ratio: 1.2 / 1;
+  }
+
+  .magazine-card-info {
+    min-height: 120px;
+    padding: 18px 12px;
+  }
+
+  .magazine-card-info h2 {
+    font-size: 15px;
+  }
+
+  .magazine-card-info p {
+    font-size: 11px;
+  }
+}
+
+
+
+
+
+
+
+/* ===================================
+   INTERACTION 01
+   MAGAZINE CARD HOVER
+=================================== */
+
+/* 이미지 전환 */
+.magazine-card-image img {
+  transition:
+    filter 0.8s ease,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 카드 호버 */
+@media (hover: hover) {
+  .magazine-card:hover .magazine-card-image img {
+    filter: grayscale(0%);
+    transform: scale(1.045);
+  }
+}
+
+/* 키보드 접근 */
+.magazine-card:focus-visible .magazine-card-image img {
+  filter: grayscale(0%);
+  transform: scale(1.045);
+}
+
+/* 움직임 최소화 설정 */
+@media (prefers-reduced-motion: reduce) {
+  .magazine-card-image img {
+    transition: none;
+  }
+}
+
+
+
+/* ===================================
+   INTERACTION 02
+   MAGAZINE INTRO REVEAL
+=================================== */
+
+.magazine-title,
+.magazine-category,
+.magazine-description {
+  will-change: transform, opacity;
+}
+
+
+/* INTERACTION 03 */
+.magazine-card {
+  will-change: transform, opacity;
+}
+
+
+
+/* ===================================
+   INTERACTION 04
+   CATEGORY UNDERLINE SLIDE
+=================================== */
+
+/* 카테고리 영역 */
+.magazine-categories {
+  position: relative;
+}
+
+/* 움직이는 밑줄 */
+.magazine-category-underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 0.15vw;
+  background: #191938;
+
+  pointer-events: none;
+}

@@ -1,0 +1,2552 @@
+
+.detail-nomero {
+  font-family: "HsBombaram20", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0;
+}
+
+
+
+
+.product-detail {
+  width: 100%;
+  color: #191938;
+}
+
+/* 상단 제목 */
+
+.detail-heading {
+  padding: 30px 0;
+}
+
+.detail-heading p {
+  font-size: 1.04vw;
+  font-weight: 800;
+  color: #7D7D93;
+  margin-bottom: 10px;
+  gap: 1vw;
+  position: relative;
+  left: 0.5vw;
+}
+
+.detail-heading p span{
+  color: #191938;
+  margin-left: 0.5vw;
+  margin-right: 1vw;
+}
+
+.detail-heading h1 {
+  font-size: 4vw;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* 왼쪽 + 오른쪽 레이아웃 */
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 53.802% 46.198%;
+  align-items: stretch;
+  border-top: 1px solid #aaa;
+}
+
+/* 왼쪽 콘텐츠 */
+
+.detail-content {
+  min-width: 0;
+}
+
+.detail-main-image {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-main-image img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+
+.detail-section {
+  min-height: 600px;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+.detail-green {
+  background: #d9ddd0;
+}
+
+.detail-green h2 {
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.detail-olive {
+  background: #838d28;
+  color: #fff;
+}
+
+.detail-olive h3{
+  color: #FFFFFF;
+  font-size: 2.14vw;
+}
+
+
+.detail-olive p{
+  color: #D1D1D1;
+  font-size: 1.77vw;
+}
+
+.detail-timeline {
+  min-height: 850px;
+}
+
+/* 오른쪽 회색 배경 */
+
+.detail-sidebar {
+  background: #F5F5F5;
+  min-width: 0;
+  border-left: 1px solid #aaa;
+}
+
+/* 스크롤을 따라오는 구매 정보 */
+
+.detail-purchase {
+  position: sticky;
+  top: 20px;
+
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.detail-purchase h2 {
+  font-size: 2.60vw;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.detail-description {
+  font-size: 1.1vw;
+  line-height: 187%;
+  margin-bottom: 1.7vw;
+  color: #7D7D93;
+}
+
+.detail-tags {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  font-size: 1.46vw;
+  text-align: center;
+}
+
+.detail-tags .bar{
+  color: #7D7D93;
+  position: relative;
+  bottom: 0.2vw;
+}
+
+.detail-price {
+  margin-top: 80px;
+  padding-top: 20px;
+  /* border-top: 1px solid #aaa; */
+  font-size: 20px;
+}
+
+.detail-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.detail-buttons button {
+  flex: 1;
+  border: none;
+  padding: 15px;
+  background: #d0d0d0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.56vw;
+}
+
+.detail-buttons button:last-child {
+  background: #191938;
+  color: #fff;
+}
+
+/* 작은 노트북 화면 대응 */
+
+@media (max-width: 900px) {
+  .detail-purchase {
+    padding: 24px;
+  }
+
+  .detail-section {
+    min-height: 450px;
+    padding: 30px 20px;
+  }
+
+  .detail-green h2 {
+    font-size: 32px;
+  }
+}
+
+
+
+
+
+/* SAVORY GREEN 채소 비주얼 섹션 */
+
+.detail-visual {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 2;
+  overflow: hidden;
+  background: #d9ddd0;
+}
+
+.detail-visual-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail-visual-title {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  z-index: 2;
+
+  margin: 0;
+  color: #818c27;
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.26vw;
+  font-weight: 700;
+  line-height:120%;
+  letter-spacing: -2%;
+}
+
+
+
+/* SAVORY GREEN 제품 설명 섹션 */
+
+.detail-olive {
+  width: 100%;
+  min-height: 65vw;
+  background-color: #818924;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 80px 7%;
+}
+
+.detail-olive-inner {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* border: 1px solid red; */
+  position: relative;
+  left: 1vw;
+}
+
+.detail-olive-item h3 {
+  margin: 0 0 6px;
+  font-size: 2.1vw;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.detail-olive-item p {
+  margin: 0;
+  font-size: 1.63vw;
+  font-weight: 300;
+  line-height: 187%;
+  word-break: keep-all;
+}
+
+/* 작은 노트북 화면 대응 */
+
+@media (max-width: 900px) {
+  .detail-olive {
+    min-height: 550px;
+    padding: 60px 6%;
+  }
+
+  .detail-olive-inner {
+    gap: 35px;
+  }
+}
+
+
+
+
+/* SAVORY GREEN 성분 화보 섹션 */
+
+.detail-ingredients {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #777;
+}
+
+/* 배경 이미지 */
+
+.detail-ingredients-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 이미지 위 텍스트 */
+
+.detail-ingredients-text {
+  position: absolute;
+  top: 35.6%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.detail-ingredients-text p {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* 작은 화면 대응 */
+
+@media (max-width: 900px) {
+  .detail-ingredients-text {
+    top: 25%;
+    gap: 20px;
+  }
+
+  .detail-ingredients-text p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* 원료 이미지 영역 */
+
+
+/* 원료 인포그래픽 전체 영역 */
+
+.detail-ingredient-list {
+  width: 100%;
+  padding: 100px 6% 0px;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  /* border: 1px solid red; */
+  position: relative;
+  right: 1.1vw;
+}
+
+/* 이미지와 텍스트의 기준 영역 */
+
+.detail-ingredient-diagram {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 100px;
+  box-sizing: border-box;
+}
+
+/* 원료 이미지 한 장 */
+
+.detail-ingredient-list-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+/* 공통 텍스트 */
+
+.ingredient-label {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.93vw;
+  font-weight: 400;
+  color: #191938;
+  line-height: 1.4;
+}
+
+/* 연결선 */
+
+.ingredient-line {
+  display: block;
+  width: 0.6px;
+  /* height: 65px; */
+  height: 7vw;
+  background-color: #191938;
+  z-index: 0;
+}
+
+
+
+/* 위쪽 텍스트 */
+
+.ingredient-label-top {
+  top: 4.6vw;
+  gap: 1vw;
+  transform: translateX(-41%);
+}
+
+/* 아래쪽 텍스트 */
+
+.ingredient-label-bottom {
+  bottom: 4.3vw;
+  gap: 12px;
+  transform: translateX(-50%);
+}
+
+/* 각 원료의 가로 위치 */
+
+.label-kale {
+  left: 11.2%;
+  top: 9%;
+}
+
+.label-crumble {
+  left: 32.3%;
+  bottom: 6%;
+}
+
+.label-protein {
+  left: 50%;
+  top: 9%;
+}
+
+.label-potassium {
+  left: 70%;
+  bottom: 6%;
+}
+
+.label-amino {
+  left: 89%;
+  top: 9%;
+}
+
+/* 작은 화면 대응 */
+
+@media (max-width: 900px) {
+  .detail-ingredient-list {
+    padding: 70px 3% 50px;
+  }
+
+  .detail-ingredient-diagram {
+    padding: 75px 0;
+  }
+
+  .ingredient-label {
+    font-size: clamp(7px, 1vw, 11px);
+  }
+
+  .ingredient-line {
+    height: 45px;
+  }
+
+  .ingredient-label-top,
+  .ingredient-label-bottom {
+    gap: 8px;
+  }
+}
+
+
+/* WHEN U EAT SAVORY GREEN */
+
+.detail-when {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 180px 5% 100px;
+  box-sizing: border-box;
+}
+
+.detail-when-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.detail-when-dot {
+  width: 17px;
+  height: 17px;
+  background-color: #84932b;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.detail-when-title h2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-size: clamp(24px, 2.3vw, 38px); */
+  font-size: 2.5vw;
+  font-weight: 400;
+  line-height:115%;
+  letter-spacing: -0.04em;
+  color: #84932b;
+}
+
+.detail-when-title p {
+  margin: 20px 0 0;
+  font-family: "Paperozi", sans-serif;
+  /* font-size: clamp(16px, 1.7vw, 28px); */
+  font-size: 2.14vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #191938;
+  word-break: keep-all;
+}
+
+/* 작은 화면 대응 */
+
+@media (max-width: 900px) {
+  .detail-ingredient-list {
+    padding: 55px 4% 0;
+  }
+
+  .detail-when {
+    padding: 100px 5% 70px;
+  }
+
+  .detail-when-dot {
+    width: 13px;
+    height: 13px;
+    margin-bottom: 18px;
+  }
+}
+
+
+
+
+
+/* 시간대별 섭취 타임라인 */
+
+.detail-timeline-list {
+  position: relative;
+  width: 85%;
+  max-width: 760px;
+  margin: 110px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 95px;
+  /* border: 1px solid red; */
+}
+
+/* 세로 연결선 */
+
+/* 각 타임라인 원형 아래 연결선 */
+
+/* 선 공통 디자인 */
+.detail-timeline-marker::after {
+  content: "";
+  position: absolute;
+  width: 0.069vw;
+  background-color: #191938;
+}
+
+/* 첫 번째 선: 아침 → 점심 */
+.detail-timeline-item:nth-child(1) .detail-timeline-marker::after {
+  top: 2.6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  /* height: 190px; */
+  height: 12.8vw;
+}
+
+/* 두 번째 선: 점심 → 저녁 */
+.detail-timeline-item:nth-child(2) .detail-timeline-marker::after {
+  top: 2.6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 13vw
+}
+
+/* 세 번째 원형 아래에는 선 없음 */
+.detail-timeline-item:nth-child(3) .detail-timeline-marker::after {
+  display: none;
+}
+
+/* 마지막 원형 아래에는 선 없음 */
+
+.detail-timeline-item:last-child
+.detail-timeline-marker::after {
+  display: none;
+}
+
+
+/* 각 시간대 */
+
+.detail-timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  column-gap: 70px;
+}
+
+/* 원형 표시 영역 */
+
+.detail-timeline-marker {
+  position: relative;
+  z-index: 1;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 공통 원형 */
+
+.timeline-circle {
+  display: block;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #84932b;
+  border-radius: 50%;
+}
+
+/* 아침: 일부가 비어 있는 원형 */
+
+.timeline-circle.morning {
+  background: conic-gradient(
+    transparent 0deg 95deg,
+    #84932b 95deg 360deg
+  );
+
+  transform: rotate(266deg);
+}
+
+/* 점심: 반원형 */
+
+.timeline-circle.lunch {
+  background: linear-gradient(
+    90deg,
+    #84932b 50%,
+    transparent 50%
+  );
+  transform: rotate(180deg);
+  position: relative;
+  right: 0.2vw;
+}
+
+/* 저녁: 완전한 원형 */
+
+.timeline-circle.evening {
+  background-color: #84932b;
+}
+
+/* 오른쪽 텍스트 */
+
+.detail-timeline-text {
+  color: #191938;
+  text-align: left;
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: 5vw;
+}
+
+.detail-timeline-text h3 {
+  margin: 0 0 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+
+.detail-timeline-text p {
+  margin: 0;
+  font-family: "Paperozi", sans-serif;
+  font-size: 1.1vw;
+  font-weight: 300;
+  line-height: 1.8;
+  word-break: keep-all;
+  text-align: left;
+  color: #7D7D93;
+}
+
+/* 하단 추천 문구 */
+
+.detail-timeline-ending {
+  margin-top: 160px;
+  text-align: center;
+}
+
+.detail-timeline-ending h3 {
+  margin: 0;
+  font-family: "Paperozi", sans-serif;
+  font-size: 2.17vw;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: -0.05em;
+  color: #84932b;
+}
+
+
+.detail-timeline-ending h3 span{
+  font-weight: 400;
+}
+/* 작은 노트북 화면 대응 */
+
+.detail-when {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 180px 5% 100px;
+  box-sizing: border-box;
+}
+
+.detail-when-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.detail-when-dot {
+  width: 17px;
+  height: 17px;
+  background-color: #84932b;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+.detail-when-title h2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-size: clamp(24px, 2.3vw, 38px); */
+  font-size: 2.5vw;
+  font-weight: 400;
+  line-height:115%;
+  letter-spacing: -0.04em;
+  color: #84932b;
+}
+
+.detail-when-title p {
+  margin: 20px 0 0;
+  font-family: "Paperozi", sans-serif;
+  /* font-size: clamp(16px, 1.7vw, 28px); */
+  font-size: 2.14vw;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #191938;
+  word-break: keep-all;
+}
+
+/* 작은 화면 대응 */
+
+/* 좁은 화면에서 타임라인 자동 정렬 */
+
+@media (max-width: 900px) {
+
+  .detail-timeline-list {
+    width: 90%;
+    margin: 75px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .detail-timeline-item {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr);
+    column-gap: 30px;
+    padding-bottom: 70px;
+  }
+
+  .detail-timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  /* 원형과 선이 들어가는 영역 */
+
+  .detail-timeline-marker {
+    position: relative;
+    width: 28px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline-circle {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 기존 텍스트 위쪽 이동 제거 */
+
+  .detail-timeline-text {
+    position: relative;
+    bottom: auto;
+    transform: none;
+  }
+
+  .detail-timeline-text h3 {
+    font-size: 15px;
+  }
+
+  .detail-timeline-text p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* 선 공통 설정 */
+
+  .detail-timeline-marker::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: auto;
+    bottom: 20px;
+    background-color: #191938;
+  }
+
+  /* 첫 번째 선 */
+
+  .detail-timeline-item:nth-child(1)
+  .detail-timeline-marker::after {
+    top: 30px;
+    bottom: 20px;
+    height: auto;
+    left: 50%;
+  }
+
+  /* 두 번째 선 */
+
+  .detail-timeline-item:nth-child(2)
+  .detail-timeline-marker::after {
+    top: 30px;
+    bottom: 20px;
+    height: auto;
+    left: 50%;
+  }
+
+  /* 마지막 원형 아래에는 선 없음 */
+
+  .detail-timeline-item:last-child
+  .detail-timeline-marker::after {
+    display: none;
+  }
+
+  .detail-timeline-ending {
+    margin-top: 100px;
+  }
+
+  .detail-timeline-ending h3 {
+    font-size: clamp(20px, 2.5vw, 27px);
+  }
+}
+
+
+
+
+
+
+/* 시간대별 섭취 타임라인 */
+
+.detail-timeline-list {
+  position: relative;
+  width: 85%;
+  max-width: 760px;
+  margin: 110px auto 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 95px;
+  /* border: 1px solid red; */
+}
+
+/* 세로 연결선 */
+
+/* 각 타임라인 원형 아래 연결선 */
+
+/* 선 공통 디자인 */
+.detail-timeline-marker::after {
+  content: "";
+  position: absolute;
+  width: 0.046vw;
+  background-color: #191938;
+}
+
+/* 첫 번째 선: 아침 → 점심 */
+.detail-timeline-item:nth-child(1) .detail-timeline-marker::after {
+  top: 2.6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  /* height: 190px; */
+  height: 12.8vw;
+}
+
+/* 두 번째 선: 점심 → 저녁 */
+.detail-timeline-item:nth-child(2) .detail-timeline-marker::after {
+  top: 2.6vw;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 13vw
+}
+
+/* 세 번째 원형 아래에는 선 없음 */
+.detail-timeline-item:nth-child(3) .detail-timeline-marker::after {
+  display: none;
+}
+
+/* 마지막 원형 아래에는 선 없음 */
+
+.detail-timeline-item:last-child
+.detail-timeline-marker::after {
+  display: none;
+}
+
+
+/* 각 시간대 */
+
+.detail-timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  column-gap: 70px;
+}
+
+/* 원형 표시 영역 */
+
+.detail-timeline-marker {
+  position: relative;
+  z-index: 1;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 공통 원형 */
+
+.timeline-circle {
+  display: block;
+  width: 1.8vw;
+  height: 1.8vw;
+  background-color: #84932b;
+  border-radius: 50%;
+}
+
+/* 아침: 일부가 비어 있는 원형 */
+
+.timeline-circle.morning {
+  background: conic-gradient(
+    transparent 0deg 95deg,
+    #84932b 95deg 360deg
+  );
+
+  transform: rotate(266deg);
+}
+
+/* 점심: 반원형 */
+
+.timeline-circle.lunch {
+  background: linear-gradient(
+    90deg,
+    #84932b 50%,
+    transparent 50%
+  );
+  transform: rotate(180deg);
+  position: relative;
+  right: 0.2vw;
+}
+
+/* 저녁: 완전한 원형 */
+
+.timeline-circle.evening {
+  background-color: #84932b;
+}
+
+/* 오른쪽 텍스트 */
+
+.detail-timeline-text {
+  color: #191938;
+  text-align: left;
+  /* border: 1px solid red; */
+  position: relative;
+  bottom: 5vw;
+}
+
+.detail-timeline-text h3 {
+  margin: 0 0 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25vw;
+  font-weight: 500;
+}
+
+/* .detail-timeline-text h4 {
+  margin: 0 0 8px;
+  font-family: "Paperozi", sans-serif;
+  font-size: clamp(13px, 1vw, 17px);
+  font-weight: 400;
+} */
+
+.detail-timeline-text p {
+  margin: 0;
+  font-family: "Paperozi", sans-serif;
+  font-size: 1.1vw;
+  font-weight: 300;
+  line-height: 1.8;
+  word-break: keep-all;
+  text-align: left;
+  color: #7D7D93;
+}
+
+/* 하단 추천 문구 */
+
+.detail-timeline-ending {
+  margin-top: 8vw;
+  text-align: center;
+}
+
+.detail-timeline-ending h3 {
+  margin: 0;
+  font-family: "Paperozi", sans-serif;
+  font-size: 2.17vw;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing:-2%;
+  color: #84932b;
+}
+
+
+.detail-timeline-ending h3 span{
+  font-weight: 400;
+}
+/* 작은 노트북 화면 대응 */
+
+
+/* 태블릿 및 작은 노트북 화면 대응 */
+
+@media (max-width: 900px) {
+
+  /* WHEN U EAT 제목 */
+
+  .detail-when-title h2 {
+    font-size: clamp(22px, 3vw, 30px);
+  }
+
+  .detail-when-title p {
+    font-size: clamp(17px, 2.3vw, 23px);
+  }
+
+  /* 타임라인 전체 */
+
+  .detail-timeline-list {
+    width: 90%;
+    margin-top: 75px;
+    gap: 25px;
+  }
+
+  .detail-timeline-item {
+    grid-template-columns: 28px minmax(0, 1fr);
+    column-gap: 30px;
+  }
+
+  /* 원형 영역 */
+
+  .detail-timeline-marker {
+    width: 28px;
+  }
+
+  .timeline-circle {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  /* 첫 번째 연결선 */
+
+  .detail-timeline-item:nth-child(1)
+  .detail-timeline-marker::after {
+    top: 30px;
+    left: 50%;
+    height: 130px;
+    width: 1px;
+  }
+
+  /* 두 번째 연결선 */
+
+  .detail-timeline-item:nth-child(2)
+  .detail-timeline-marker::after {
+    top: 30px;
+    left: 50%;
+    height: 130px;
+    width: 1px;
+  }
+
+  /* 텍스트 */
+
+  .detail-timeline-text {
+    bottom: 25px;
+  }
+
+  .detail-timeline-text h3 {
+    font-size: 15px;
+  }
+
+  .detail-timeline-text p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* 하단 추천 문구 */
+
+  .detail-timeline-ending {
+    margin-top: 110px;
+  }
+
+  .detail-timeline-ending h3 {
+    font-size: clamp(20px, 2.5vw, 27px);
+  }
+}
+
+
+
+/* 좁은 화면에서만 타임라인 선 자동 조절 */
+
+@media (max-width: 900px) {
+  .detail-timeline-list {
+    gap: 0;
+  }
+
+  .detail-timeline-item {
+    padding-bottom: 70px;
+  }
+
+  .detail-timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .detail-timeline-marker {
+    height: 100%;
+  }
+
+  .detail-timeline-text {
+    bottom: auto;
+  }
+
+  /* 첫 번째 선 */
+  .detail-timeline-item:nth-child(1) .detail-timeline-marker::after {
+    top: 30px;
+    bottom: -50px;
+    height: auto;
+  }
+
+  /* 두 번째 선 */
+  .detail-timeline-item:nth-child(2) .detail-timeline-marker::after {
+    top: 30px;
+    bottom: -50px;
+    height: auto;
+  }
+}
+
+
+
+
+/* SAVORY GREEN 비주얼 이미지 */
+
+.detail-motion {
+  width: 100%;
+  overflow: hidden;
+}
+
+.detail-motion-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* ================================
+   SAVORY GREEN 브랜드 메시지
+================================ */
+
+.detail-message {
+  width: 100%;
+  height: 40vw;
+  background-color: #f5f5f5;
+  padding: 7.6vw 5% ;
+  box-sizing: border-box;
+}
+
+.detail-message-inner {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 65px;
+}
+
+.detail-message-inner p {
+  margin: 0;
+  color: #191938;
+  font-family: "Paperozi", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 160%;
+  text-align: center;
+  word-break: keep-all;
+}
+
+/* 작은 화면 대응 */
+@media (max-width: 900px) {
+  .detail-message {
+    padding: 75px 6%;
+  }
+
+  .detail-message-inner {
+    gap: 45px;
+  }
+
+  .detail-message-inner p {
+    font-size: clamp(12px, 1.5vw, 16px);
+    line-height: 1.8;
+  }
+}
+
+
+
+
+
+/* ===================================
+   SAVORY GREEN EDITORIAL
+=================================== */
+
+.detail-editorial {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.5;
+  /* overflow: hidden; */
+  background-color: #dce1d2;
+  /* border: 1px solid red; */
+}
+
+/* 배경 이미지 */
+.detail-editorial-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  /* border: 1px solid red; */
+}
+
+/* 이미지와 텍스트 기준 영역 */
+.detail-editorial-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 제품 화보 공통 */
+.detail-editorial-photo {
+  position: absolute;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.detail-editorial-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 오른쪽 위 이미지 */
+.detail-editorial-photo.photo-top {
+  width: 44%;
+  /* aspect-ratio: 0.8 / 1; */
+  top: 10%;
+  right: 10%;
+}
+
+/* 왼쪽 아래 이미지 */
+.detail-editorial-photo.photo-bottom {
+  width: 44%;
+  /* aspect-ratio: 0.8 / 1; */
+  bottom: 13%;
+  left: 10%;
+}
+
+/* 영문 텍스트 공통 */
+.detail-editorial-text {
+  position: absolute;
+  z-index: 3;
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 187%;
+  color: #818924;
+}
+
+/* 왼쪽 위 텍스트 */
+.detail-editorial-text.text-left {
+  top: 22%;
+  left: 11.4%;
+}
+
+/* 오른쪽 아래 텍스트 */
+.detail-editorial-text.text-right {
+  right: 11%;
+  bottom: 20%;
+  text-align: left;
+}
+
+/* 작은 화면 대응 */
+@media (max-width: 900px) {
+  .detail-editorial {
+    aspect-ratio: 1 / 1.6;
+  }
+
+  .detail-editorial-text {
+    font-size: clamp(8px, 1.3vw, 12px);
+  }
+}
+
+
+/* 상단 제품 이미지와 구매 영역의 여백은 유지 */
+
+/* 아래 상세 콘텐츠만 왼쪽 여백 제거 */
+.detail-content > section:not(.detail-main-image) {
+  width: calc(100% + 2.81vw);
+  margin-left: -2.81vw;
+  box-sizing: border-box;
+}
+
+
+
+/* =========================================
+   SAVORY GREEN 추천 제품
+========================================= */
+
+.detail-recommend {
+  width: 100%;
+  padding: 100px 0 110px;
+  background: #F5F5F5;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+  margin-top: 3vw;
+}
+
+/* 상단 텍스트 */
+.detail-recommend-heading {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.detail-recommend-heading h2 {
+  margin: 0;
+  color: #191938;
+  font-size: 2.2vw;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.05em;
+}
+
+.detail-recommend-heading p {
+  margin: 0.8vw 0 0;
+  color: #82839a;
+  font-size:1.25vw;
+  line-height: 187%;
+  word-break: keep-all;
+}
+
+/* 슬라이더 영역 */
+.detail-recommend-slider {
+  position: relative;
+  width: 100%;
+  height: 34vw;
+  min-height: 260px;
+  margin-top: 45px;
+}
+
+/* 연한 배경 타이포 */
+.detail-recommend-bgtext {
+  position: absolute;
+  top: -40%;
+  left: 3%;
+  z-index: 0;
+
+  color: #EDEDED;
+  font-size: 5.5vw;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -2%;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* 제품 이동 영역 */
+.detail-recommend-track {
+  position: relative;
+  bottom: 4vw;
+  width: 100%;
+  height: 100%;
+}
+
+/* 제품 공통 */
+.detail-recommend-product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 58%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.85s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.85s ease;
+
+  will-change: transform;
+}
+
+.detail-recommend-product img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 가운데 */
+.detail-recommend-product.center {
+  z-index: 3;
+  transform: translate(-50%, -50%) translateX(0) scale(1.1);
+}
+
+/* 왼쪽 */
+.detail-recommend-product.left {
+  z-index: 1;
+  transform: translate(-50%, -50%) translateX(-90%) scale(0.65);
+}
+
+/* 오른쪽 */
+.detail-recommend-product.right {
+  z-index: 1;
+  transform: translate(-50%, -50%) translateX(90%) scale(0.65);
+}
+
+/* 다음 버튼을 눌렀을 때 */
+.detail-recommend-track.is-sliding:has(
+  .detail-recommend-product.center
+) {
+  pointer-events: none;
+}
+
+.detail-recommend-product.left img,
+.detail-recommend-product.right img {
+  translate: 0 4vw;
+  width: 80%;
+}
+
+.detail-recommend-product img {
+  transition: translate 0.65s ease;
+}
+
+
+
+
+
+
+
+
+
+/* 좌우 화살표 */
+.detail-recommend-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  width: 48px;
+  height: 48px;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  transform: translateY(-100%);
+}
+
+.detail-recommend-arrow.prev {
+  left: 21%;
+}
+
+.detail-recommend-arrow.next {
+  right: 17.3%;
+}
+
+.detail-recommend-arrow span {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-top: 3px solid #191938;
+  border-right: 3px solid #191938;
+}
+
+.detail-recommend-arrow.prev span {
+  transform: rotate(-135deg);
+}
+
+.detail-recommend-arrow.next span {
+  transform: rotate(45deg);
+}
+
+/* 제품 정보 */
+.detail-recommend-info {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  padding: 15px 20px 0;
+}
+
+.detail-recommend-info h3 {
+  margin: 0;
+  color: #2B2D2F;
+  font-size: 1.67vw;
+  font-weight: 700;
+}
+
+.detail-recommend-info p {
+  margin: 20px 0 0;
+  color: #191938;
+  font-size: 1.04vw;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .detail-recommend {
+    padding: 70px 0 80px;
+  }
+
+  .detail-recommend-slider {
+    height: 42vw;
+    min-height: 190px;
+  }
+
+  .detail-recommend-product {
+    width: 70%;
+  }
+
+  .detail-recommend-arrow {
+    width: 32px;
+    height: 32px;
+  }
+
+  .detail-recommend-arrow span {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+  }
+}
+
+
+
+
+
+
+/* ===================================
+   INTERACTION 01
+   메인 카피 순차 등장
+=================================== */
+
+.detail-visual-line {
+  display: block;
+  width: fit-content;
+  will-change: transform, opacity;
+}
+
+
+/* ===================================
+   INTERACTION 02
+   제품 설명 순차 등장
+=================================== */
+
+.detail-olive-item {
+  will-change: transform, opacity;
+}
+
+
+/* ===================================
+   INTERACTION 03
+   원료 인포그래픽 순차 등장
+=================================== */
+
+/* 연결선은 원래 길이를 유지하면서 펼쳐짐 */
+.detail-ingredient-list .ingredient-line {
+  transform-origin: center center;
+  will-change: transform;
+}
+
+/* 원료 이미지 */
+.detail-ingredient-list-image {
+  will-change: transform, opacity;
+}
+
+/* 성분명 */
+.detail-ingredient-list .ingredient-label > span:not(.ingredient-line) {
+  will-change: transform, opacity;
+}
+
+
+
+/* ===================================
+   INTERACTION 04
+   섭취 타임라인
+=================================== */
+
+/* 원형 그래픽 */
+.detail-when .timeline-circle {
+  will-change: transform, opacity;
+}
+
+/* 시간 및 설명 텍스트 */
+.detail-when .detail-timeline-text h3,
+.detail-when .detail-timeline-text p {
+  will-change: transform, opacity;
+}
+
+
+/* ===================================
+   INTERACTION 05
+   제품 화보 패럴랙스
+=================================== */
+
+.detail-editorial .detail-editorial-photo {
+  overflow: hidden;
+}
+
+.detail-editorial .detail-editorial-photo img {
+  display: block;
+  will-change: transform;
+}
+
+/* ===================================
+   INTERACTION 05
+   화보 텍스트 좌우 등장
+=================================== */
+
+.detail-editorial-text {
+  will-change: transform, opacity;
+}
+
+
+
+
+
+/* ===================================
+   INTERACTION 07
+   버튼 화살표 호버
+=================================== */
+
+.detail-hover-button .button-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* 화살표 기본 상태 */
+.detail-hover-button .button-arrow {
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translate(-5px, 4px);
+
+  transition:
+    width 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 호버 시 화살표 등장 */
+@media (hover: hover) {
+  .detail-hover-button:hover .button-arrow {
+    width: 18px;
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+/* 키보드 포커스 */
+.detail-hover-button:focus-visible .button-arrow {
+  width: 18px;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-hover-button .button-arrow {
+    transition: none;
+  }
+}
+
+
+
+/* ===================================
+   INTERACTION 08
+   추천 섹션 텍스트 등장
+=================================== */
+
+.recommend-reveal-eyebrow,
+.recommend-reveal-title,
+.recommend-reveal-description {
+  will-change: transform, opacity;
+}
+
+.recommend-reveal-background {
+  will-change: opacity;
+}
+
+
+
+/* 추천 섹션 텍스트 인터랙션 */
+
+.recommend-reveal-eyebrow,
+.recommend-reveal-title,
+.recommend-reveal-description {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+
+
+
+
+
+
+
+/* ===================================
+   INTERACTION 09
+   이미지 블러 해제 + 텍스트 페이드
+=================================== */
+
+/* 기존 섹션 레이아웃 유지 */
+.detail-ingredients {
+  overflow: hidden;
+}
+
+
+/* 이미지 영역 */
+.detail-ingredients {
+  overflow: hidden;
+}
+
+/* 기본 상태: 자연스러운 블러 */
+.detail-ingredients-image {
+  filter: blur(7px);
+  transform: scale(1.04);
+
+  transition:
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* 호버 시: 블러 제거 */
+@media (hover: hover) {
+  .detail-ingredients:hover .detail-ingredients-image {
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+
+/* 기본 상태: 텍스트 선명하게 */
+.detail-ingredients-text {
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+
+
+
+/* 호버 시 */
+@media (hover: hover) {
+
+  /* 이미지 블러 제거 */
+  .detail-ingredients:hover .detail-ingredients-image {
+    filter: blur(0px);
+  }
+
+  /* 텍스트 살짝 연하게 */
+  .detail-ingredients:hover .detail-ingredients-text {
+    opacity: 0.35;
+  }
+
+}
+
+/* 움직임 최소화 설정 */
+@media (prefers-reduced-motion: reduce) {
+  .detail-ingredients-image,
+  .detail-ingredients-text {
+    transition: none;
+  }
+}
+
+
+
+/* NOMERO! 글자별 등장 인터랙션 - 공통 */
+
+.detail-nomero-line .detail-nomero {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nomero-letter {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+
+
+
+
+/* ===================================
+   PRODUCT DETAIL - TABLET RESPONSIVE
+=================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .detail-heading p {
+    font-size: 13px;
+  }
+
+  .detail-heading h1 {
+    font-size: 36px;
+  }
+
+  .detail-main-image {
+    height: 480px;
+  }
+
+  .detail-purchase h2 {
+    font-size: 25px;
+  }
+
+  .detail-description {
+    font-size: 13px;
+  }
+
+  .detail-tags {
+    font-size: 13px;
+    gap: 15px;
+  }
+
+  .detail-buttons button {
+    font-size: 14px;
+  }
+
+  .detail-visual-title {
+    font-size: 42px;
+  }
+
+  .detail-olive-item h3 {
+    font-size: 22px;
+  }
+
+  .detail-olive-item p {
+    font-size: 15px;
+  }
+
+  .detail-recommend-heading h2 {
+    font-size: 25px;
+  }
+
+  .detail-recommend-heading p {
+    font-size: 14px;
+  }
+
+  .detail-recommend-info h3 {
+    font-size: 20px;
+  }
+
+  .detail-recommend-info p {
+    font-size: 13px;
+  }
+}
+
+
+/* ===================================
+   PRODUCT DETAIL - MOBILE RESPONSIVE
+=================================== */
+
+@media (max-width: 767px) {
+
+  /* 상단 제품명 */
+  .detail-heading {
+    padding: 24px 0;
+  }
+
+  .detail-heading p {
+    font-size: 12px;
+  }
+
+  .detail-heading h1 {
+    font-size: clamp(30px, 8vw, 42px);
+  }
+
+  /* 제품 이미지 + 구매 정보 */
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-main-image {
+    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .detail-main-image img {
+    width: 75%;
+    height: 75%;
+  }
+
+  .detail-sidebar {
+    border-left: none;
+    border-top: 1px solid #aaa;
+  }
+
+  .detail-purchase {
+    position: static;
+    padding: 30px 20px;
+  }
+
+  .detail-purchase h2 {
+    font-size: 26px;
+  }
+
+  .detail-description {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .detail-tags {
+    font-size: 13px;
+    gap: 12px;
+  }
+
+  .detail-price {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .detail-buttons button {
+    font-size: 14px;
+    padding: 14px 10px;
+  }
+
+  /* SAVORY GREEN 비주얼 */
+  .detail-visual-title {
+    font-size: clamp(32px, 9vw, 48px);
+  }
+
+  /* 제품 설명 */
+  .detail-olive {
+    min-height: auto;
+    padding: 70px 8%;
+  }
+
+  .detail-olive-inner {
+    gap: 30px;
+    left: 0;
+  }
+
+  .detail-olive-item h3 {
+    font-size: 21px;
+  }
+
+  .detail-olive-item p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* 성분 화보 */
+  .detail-ingredients {
+    aspect-ratio: 1 / 1.2;
+  }
+
+  .detail-ingredients-text {
+    top: 30%;
+    gap: 15px;
+  }
+
+  .detail-ingredients-text p {
+    font-size: 13px;
+  }
+
+  /* WHEN U EAT */
+  .detail-when-title h2 {
+    font-size: 24px;
+  }
+
+  .detail-when-title p {
+    font-size: 18px;
+  }
+
+  /* 브랜드 메시지 */
+  .detail-message {
+    height: auto;
+    padding: 80px 6%;
+  }
+
+  .detail-message-inner {
+    gap: 35px;
+  }
+
+  .detail-message-inner p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  /* EDITORIAL */
+  .detail-editorial-text {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  /* 추천 제품 */
+  .detail-recommend-heading h2 {
+    font-size: 23px;
+  }
+
+  .detail-recommend-heading p {
+    font-size: 13px;
+  }
+
+  .detail-recommend-info h3 {
+    font-size: 19px;
+  }
+
+  .detail-recommend-info p {
+    font-size: 12px;
+  }
+
+  .detail-recommend-arrow.prev {
+    left: 5%;
+  }
+
+  .detail-recommend-arrow.next {
+    right: 5%;
+  }
+}
+
+
+
+
+
+/* ===================================
+   MOBILE - FIXED PURCHASE PANEL
+=================================== */
+
+@media (max-width: 767px) {
+
+  /* 구매 정보 패널 전체 고정 */
+  .detail-purchase {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    padding: 18px 20px;
+    padding-bottom: calc(14px + env(safe-area-inset-bottom));
+
+    background: #f5f5f5;
+    border-top: 1px solid #aaa;
+    box-sizing: border-box;
+
+    z-index: 100;
+  }
+
+  /* 제품명 */
+  .detail-purchase h2 {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0 0 8px;
+  }
+
+  /* 긴 제품 설명은 패널에서 제외 */
+  .detail-description {
+    display: none;
+  }
+
+  /* 제품 태그는 패널에서 제외 */
+  .detail-tags {
+    display: none;
+  }
+
+  /* 가격 */
+  .detail-price {
+    margin-top: 8px;
+    padding-top: 0;
+    font-size: 16px;
+  }
+
+  /* 버튼 */
+  .detail-buttons {
+    position: static;
+    width: 100%;
+    margin-top: 14px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  .detail-buttons button {
+    padding: 14px 10px;
+    font-size: 14px;
+  }
+
+  /* 고정 패널만큼 하단 공간 확보 */
+  .product-detail {
+    padding-bottom: calc(190px + env(safe-area-inset-bottom));
+  }
+}
+
+
+
+/* ===================================
+   MOBILE - PURCHASE PANEL FIX
+=================================== */
+
+@media (max-width: 767px) {
+
+  /* 기존 사이드바가 공간 차지하지 않도록 */
+  .detail-sidebar {
+    height: 0;
+    min-height: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* 구매 패널 크기 제한 */
+  .detail-purchase {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+    max-height: 45dvh;
+    overflow-y: auto;
+
+    padding: 12px 16px;
+    padding-bottom: calc(12px + env(safe-area-inset-bottom));
+
+    box-sizing: border-box;
+    z-index: 100;
+  }
+
+  /* 제품명 */
+  .detail-purchase h2 {
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0 0 4px;
+  }
+
+  /* 가격 */
+  .detail-price {
+    margin-top: 4px;
+    padding-top: 0;
+    font-size: 15px;
+  }
+
+  /* 버튼 */
+  .detail-buttons {
+    margin-top: 10px;
+    gap: 8px;
+  }
+
+  .detail-buttons button {
+    padding: 12px 8px;
+    font-size: 13px;
+  }
+
+  /* 하단 고정 패널 높이만큼 여백 */
+  .product-detail {
+    padding-bottom: calc(145px + env(safe-area-inset-bottom));
+  }
+}
+
+
+
+
+/* ===================================
+   MOBILE - PURCHASE EXPAND PANEL
+=================================== */
+
+/* 데스크톱에서는 펼치기 버튼 숨김 */
+.detail-expand-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  /* 구매 패널 */
+  .detail-purchase {
+    display: flex;
+    flex-direction: column;
+    max-height: 65dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  /* 01. 제품명 */
+  .detail-purchase h2 {
+    order: 1;
+  }
+
+  /* 02. 가격 */
+  .detail-price {
+    order: 2;
+  }
+
+  /* 03. 핵심 성분 */
+  .detail-tags {
+    order: 3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+    margin-top: 12px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: #7D7D93;
+    text-align: left;
+  }
+
+  .detail-tags .bar {
+    position: static;
+    color: #aaa;
+  }
+
+  /* 04. 펼치기 버튼 */
+  .detail-expand-toggle {
+    order: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 9px 0;
+
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    background: transparent;
+
+    color: #7D7D93;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+    text-align: left;
+  }
+
+  .detail-expand-arrow {
+    display: inline-block;
+    font-size: 19px;
+    line-height: 1;
+    transform: rotate(180deg);
+    transition: transform 0.35s ease;
+  }
+
+  .detail-expand-toggle.expanded
+  .detail-expand-arrow {
+    transform: rotate(0deg);
+  }
+
+  /* 05. 접었다 펼치는 제품 설명 */
+  .detail-description {
+    order: 5;
+    display: block;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 12px;
+    line-height: 1.8;
+    color: #7D7D93;
+    word-break: keep-all;
+
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      padding 0.4s ease;
+  }
+
+  .detail-description.expanded {
+    max-height: 180px;
+    overflow-y: auto;
+    opacity: 1;
+    padding: 8px 0 14px;
+  }
+
+  /* 06. 구매 버튼 */
+  .detail-buttons {
+    order: 6;
+    flex-shrink: 0;
+    margin-top: 8px;
+  }
+
+  /* 하단 패널이 콘텐츠를 가리지 않도록 */
+  .product-detail {
+    padding-bottom:
+      calc(230px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .detail-expand-arrow,
+  .detail-description {
+    transition: none;
+  }
+}
+
+
+
+/* ===================================
+   MOBILE - NAVY PURCHASE PANEL
+=================================== */
+/* 
+@media (max-width: 767px) {
+
+
+  .detail-purchase {
+    background-color: #191938;
+    color: #ffffff;
+    border: 1px solid #191938;
+  }
+
+
+  .detail-purchase h2,
+  .detail-price {
+    color: #ffffff;
+  }
+
+
+  .detail-tags,
+  .detail-tags .bar {
+    color: #B5B5C8;
+  }
+
+
+  .detail-expand-toggle {
+    color: #D9D9E3;
+    border-top-color: #55556F;
+  }
+
+
+  .detail-description {
+    color: #D9D9E3;
+  }
+
+
+  .detail-buttons button:first-child {
+    background-color: #D9D9E3;
+    color: #191938;
+  }
+
+  .detail-buttons button:last-child {
+    background-color: #C8E35F;
+    color: #191938;
+  }
+} */
+
+
+
+/* 모바일 제품명 + 가격 가로 배치 */
+@media (max-width: 767px) {
+
+  .detail-purchase-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    order: 1;
+  }
+
+  .detail-purchase-header h2 {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .detail-purchase-header .detail-price {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  .detail-tags {
+    order: 2;
+  }
+
+  .detail-expand-toggle {
+    order: 3;
+  }
+
+  .detail-description {
+    order: 4;
+  }
+
+  .detail-buttons {
+    order: 5;
+  }
+}
+
+
+
+/* ===================================
+   DESKTOP - ORIGINAL PURCHASE LAYOUT
+=================================== */
+
+@media (min-width: 768px) {
+
+  /* 제품명과 가격을 기존처럼 세로 배치 */
+  .detail-purchase-header {
+    display: contents;
+  }
+
+  /* 기존 제품명 위치 유지 */
+  .detail-purchase-header h2 {
+    order: 1;
+  }
+
+  /* 기존 제품 설명 */
+  .detail-description {
+    order: 2;
+  }
+
+  /* 기존 핵심 성분 */
+  .detail-tags {
+    order: 3;
+  }
+
+  /* 기존 가격 위치 */
+  .detail-purchase-header .detail-price {
+    order: 4;
+  }
+
+  /* 기존 구매 버튼 */
+  .detail-buttons {
+    order: 5;
+  }
+
+  /* 데스크톱은 기존 배치 방식 유지 */
+  .detail-purchase {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+
+  .detail-recommend-product.left {
+    transform: translate(-53%, -50%)
+               translateX(-55%) scale(0.55);
+    z-index: 1;
+  }
+
+  .detail-recommend-product.right {
+    transform: translate(-48%, -50%)
+               translateX(55%) scale(0.55);
+    z-index: 1;
+  }
+}
+
+
+/* 모바일 추천 제품 화살표 위치 조정 */
+@media (max-width: 767px) {
+
+  /* 이전 화살표 → 오른쪽으로 이동 */
+  .detail-recommend-arrow.prev {
+    left: 23.5%;
+  }
+
+  /* 다음 화살표 → 왼쪽으로 이동 */
+  .detail-recommend-arrow.next {
+    right: 20%;
+  }
+
+}
+
+
+
+
+
+/* 데스크톱 - 모든 상세페이지 구매 정보 순서 통일 */
+@media (min-width: 768px) {
+  .detail-purchase > h2 {
+    order: 1;
+  }
+
+  .detail-purchase > .detail-description {
+    order: 2;
+  }
+
+  .detail-purchase > .detail-tags {
+    order: 3;
+  }
+
+  .detail-purchase > .detail-price {
+    order: 4;
+  }
+
+  .detail-purchase > .detail-buttons {
+    order: 5;
+  }
+}

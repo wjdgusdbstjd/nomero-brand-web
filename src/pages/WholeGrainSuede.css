@@ -1,0 +1,93 @@
+.whole-grain-suede .detail-olive {
+  background-color: #7B9B88;
+}
+
+/* WHOLE GRAIN SUEDE - 메인 비주얼 타이포 컬러 */
+
+.whole-grain-suede .detail-visual-title {
+  color: #7B9B88;
+}
+
+
+/* WHOLE GRAIN SUEDE - 원료 인포그래픽 라벨 위치 */
+
+/* 위쪽 첫 번째 */
+.whole-grain-suede .label-kale {
+  left: 10.5%;
+  top: 9%;
+}
+
+/* 위쪽 두 번째 */
+.whole-grain-suede .label-protein {
+  left: 49%;
+  top: 9%;
+}
+
+/* 위쪽 세 번째 */
+.whole-grain-suede .label-amino {
+  left: 87%;
+  top: 9%;
+}
+
+/* 아래쪽 첫 번째 */
+.whole-grain-suede .label-crumble {
+  left: 30.7%;
+  bottom: 6%;
+}
+
+/* 아래쪽 두 번째 */
+.whole-grain-suede .label-potassium {
+  left: 68%;
+  bottom: 6%;
+}
+
+
+/* 오른쪽 아래 선만 조정 */
+.whole-grain-suede .label-potassium .ingredient-line {
+  width: 1px;
+  background-color: rgba(25, 25, 56, 0.75);
+}
+
+
+
+
+.whole-grain-suede .detail-editorial-text{
+    color: #7B9B88;
+}
+
+.whole-grain-suede .timeline-circle.morning{
+    background: conic-gradient(transparent 0deg 95deg, #7B9B88 95deg 360deg);
+}
+
+.whole-grain-suede .timeline-circle.lunch{
+    background: linear-gradient(90deg, #7B9B88 50%, transparent 50%);
+}
+
+.whole-grain-suede .timeline-circle.evening{
+    background-color: #7B9B88;
+}
+
+.whole-grain-suede .detail-timeline-ending h3{
+    color: #7B9B88;
+}
+
+
+/* WHOLE GRAIN SUEDE - 두 번째 타임라인 연결선 길이 조절 */
+.whole-grain-suede
+.detail-timeline-item:nth-child(2)
+.detail-timeline-marker::after {
+  height: 11vw;
+}
+
+
+
+/* WHOLE GRAIN SUEDE - 모바일 두 번째 타임라인 선 수정 */
+@media (max-width: 900px) {
+  .whole-grain-suede
+  .detail-timeline-item:nth-child(2)
+  .detail-timeline-marker::after {
+    height: auto;
+    top: 30px;
+    bottom: -50px;
+  }
+}

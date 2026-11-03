@@ -1,0 +1,244 @@
+
+/* SHOP 전체 */
+.shop-page {
+  width: 100%;
+  padding: 70px 0 120px;
+  color: #191938;
+}
+
+/* SHOP 타이틀 */
+.shop-title {
+  margin: 0 0 42px 20px;
+  font-size: clamp(42px, 4.5vw, 72px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+}
+
+/* 카테고리 탭 */
+.shop-tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: clamp(20px, 4vw, 70px);
+  margin: 0 20px 42px;
+}
+
+.shop-tab {
+  padding: 0 8px 8px;
+  border: none;
+  /* border-bottom: 0.15vw solid transparent; */
+  background: transparent;
+
+  color: #d5d5d5;
+  font-family: inherit;
+  font-size: clamp(16px, 2vw, 30px);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.shop-tab:hover {
+  color: #77778b;
+}
+
+.shop-tab.active {
+  color: #191938;
+  /* border-bottom-color: #191938; */
+}
+
+/* 카테고리 설명 */
+.shop-description {
+  max-width: 1050px;
+  margin: 0 20px 48px;
+
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 400;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+/* 상품 3단 그리드 */
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #a8a8a8;
+}
+
+.shop-product {
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  border-right: 1px solid #a8a8a8;
+  border-bottom: 1px solid #a8a8a8;
+}
+
+.shop-product:nth-child(3n) {
+  border-right: none;
+}
+
+/* 상품명 */
+.shop-product-name {
+  padding: 14px 10px;
+  border-bottom: 1px solid #a8a8a8;
+  text-align: center;
+  font-size: clamp(12px, 1.2vw, 18px);
+  font-weight: 400;
+}
+
+/* 상품 이미지 */
+.shop-product-image {
+  width: 100%;
+  aspect-ratio: 1.18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.shop-product-image img {
+  display: block;
+  width: 75%;
+  height: 80%;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+}
+
+.shop-product:hover .shop-product-image img {
+  transform: scale(1.06);
+}
+
+/* 태블릿 */
+@media (max-width: 1023px) {
+  .shop-page {
+    padding-top: 55px;
+  }
+
+  .shop-tabs {
+    gap: 20px;
+  }
+
+  .shop-product-image img {
+    width: 85%;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .shop-page {
+    padding: 40px 0 70px;
+  }
+
+  .shop-title {
+    margin: 0 0 30px;
+    font-size: 42px;
+  }
+
+  .shop-tabs {
+    margin: 0 0 30px;
+    gap: 12px 20px;
+  }
+
+  .shop-tab {
+    padding: 0 2px 6px;
+    font-size: 15px;
+  }
+
+  .shop-description {
+    margin: 0 0 35px;
+    font-size: 12px;
+  }
+
+  .shop-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .shop-product {
+    border-right: 1px solid #a8a8a8;
+  }
+
+  .shop-product:nth-child(3n) {
+    border-right: 1px solid #a8a8a8;
+  }
+
+  .shop-product:nth-child(2n) {
+    border-right: none;
+  }
+
+  .shop-product-name {
+    padding: 12px 5px;
+    font-size: 12px;
+  }
+
+  .shop-product-image {
+    aspect-ratio: 1;
+  }
+}
+
+
+
+
+
+/* DIGESTIBLE 빈 상품 칸 */
+.shop-product-empty {
+  display: block;
+  pointer-events: none;
+}
+
+/* 모바일에서는 빈 칸 숨기기 */
+@media (max-width: 767px) {
+  .shop-product-empty {
+    display: none;
+  }
+}
+
+
+
+
+
+/* ===================================
+   INTERACTION 04
+   SHOP CATEGORY UNDERLINE SLIDE
+=================================== */
+
+.shop-tabs {
+  position: relative;
+}
+
+.shop-tab-underline {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 0.15vw;
+  background: #191938;
+
+  pointer-events: none;
+}
+
+
+
+/* BODY HEALTHY - 모바일 오른쪽 구분선 수정 */
+@media (max-width: 767px) {
+  .shop-grid-body .shop-product:not(.shop-product-empty) {
+    border-right: 1px solid #a8a8a8;
+  }
+
+  .shop-grid-body .shop-product:nth-child(3),
+  .shop-grid-body .shop-product:nth-child(5),
+  .shop-grid-body .shop-product:nth-child(7) {
+    border-right: none;
+  }
+}
+
+
+/* 모바일 - 마지막 상품이 하나일 때 오른쪽 선 유지 */
+@media (max-width: 767px) {
+  .shop-grid-digestible .shop-product:last-child,
+  .shop-grid-snack .shop-product:last-child {
+    border-right: 1px solid #a8a8a8;
+  }
+}
